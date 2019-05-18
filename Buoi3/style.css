@@ -1,0 +1,39 @@
+
+		.xanh{
+			color: green;
+		}
+		#hong{
+			color: pink;
+		}
+		p{
+			color: yellow;
+		}
+		div{
+			background-color: blue;
+			width: 20%;
+			height: 80%;
+		}
+		#mien_bac li{
+			color: red;
+		}
+		div ul{
+			color:red;
+		}
+		div > ul{
+			color:green;
+		}
+		div + p{
+			color: yellow;
+		}
+		div ~ p{
+			color: purple;
+		}
+		a[title ='web26']{
+			color:gray;
+		}
+		#mien_bac li:nth-child(3){
+			color: pink;
+		}
+		#mien_nam li:nth-last-child(1){
+			color: orange;
+		}
