@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.master{
+			position: relative;
+			margin: 0 auto; 	
+			height: 1000px;
+		}
+		#div1, #div2, #div3, #div4{
+			width: 300px;
+			height: 300px;
+			color: blue;
+		}
+		#div1{
+			background-color: pink;
+			position: absolute;
+			z-index: 2;
+			top: 20px;
+		}
+		#div2{
+			background-color: orange;
+			position: absolute;
+			z-index: 1;
+			bottom: 10px;
+			/*top: 30px;*/
+		}
+		#div3{
+			background-color: red;
+			position: absolute;
+			z-index: 4;
+			left: 20px;
+		}
+		#div4{
+			background-color: yellow;
+			position: absolute;
+			z-index: 3;
+			right: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="master">
+		<div id="div1">Con</div>
+		<div id="div2">Cho</div>
+		<div id="div3">Tien</div>
+		<div id="div4">.</div>
+	</div>
+</body>
+</html>
