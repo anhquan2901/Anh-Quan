@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<!-- <script type="text/javascript">
-		function clickMe(){
-			alert('Zent group');
-		}
-	</script> -->
+	<title>ex3</title>
 </head>
 <body>
-	<button onclick="clickMe()">ClickMe</button>
 	<script type="text/javascript">
-		function clickMe(){
-			if(confirm('Are You Sure?')){
-				window.location.href = "https://zent.edu.vn/classrooms/WF21/units/8/theories"	}
-		}
-	</script>
+    
+    var n = prompt('Mời bạn nhập vào 1 số n','Mời bạn nhập')
+    var m = 1;
+    var s = 0;
+    for (var i = 1; i <= n; i++) {
+        m *= i;
+    	s += i / m;
+    }
+    document.write('Tổng S = 1/1! + 2/2! + ….+ n/n! bằng: '+s);
+  </script>
 </body>
 </html>

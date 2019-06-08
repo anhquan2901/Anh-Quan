@@ -2,27 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>ex6</title>
 </head>
 <body>
-	<button onclick="clickMe()">aaa</button>
-	<h1 id="name">Hoang Hiep</h1>
-	<p class="item">Lorem ipsum dolor sit amet.</p>
-	<p class="item">Lorem ipsum dolor sit amet.</p>
-
 	<script type="text/javascript">
-		function clickMe(){
-			document.getElementById('name').style.color ='red';
-			document.getElementById('name').innerHTML = 'Hoang Hiep Hiep'
-			
-			
-			var a = document.getElementsByTagName('p');
-			for (var i = a.length - 1; i >= 0; i--) {
-				a[i].style.color="green";
-			}
-		
-		
-		}
-	</script>
+    var a = 20;
+    var b = 0;
+    for (var i = 1; i <= a; i++) {
+      if (i % 2 == 0){
+        b = b + i;
+
+      }
+    }
+    document.write('Tổng 10 số chẵn đàu tiên là: '+b);
+  </script>
 </body>
 </html>

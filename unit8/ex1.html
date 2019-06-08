@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<script type="text/javascript">
-		function clickMe(){
-			alert('Zent group');
-		}
-	</script>
+	<title>ex1</title>
 </head>
 <body>
-	<button onclick="alert('Zent group')">ClickMe</button>
-	<!-- <script type="text/javascript">
-		function clickMe(){
-			alert('Zent group');
+	<script type="text/javascript">
+		var dem = 0;
+		var dem1 = 0;
+		var s = 0;
+		for (var i = 1; i<100; i++) {
+			if(i%7==0){
+				dem++;
+			}
+			if (i%3==0) {
+				dem1++;
+			}
+			s = dem + dem1;
 		}
-	</script> -->
+		document.write('Số lượng các số chia hết cho 3 hoặc chia hết cho 7 là: '+ s)
+	</script>
+	
 </body>
 </html>

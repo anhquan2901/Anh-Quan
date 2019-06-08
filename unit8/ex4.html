@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>ex4</title>
 </head>
 <body>
-	<button onclick="clickMe()">ClickMe</button>
 	<script type="text/javascript">
-		function clickMe(){
-			var a = 1;
-			if (a =='1') {
-				alert('qqqq')
-			}else{
-				alert('eeee')
+		var m = prompt('Mời bạn nhập số m...')
+		do{
+			var n = prompt('Mời bạn nhập số n...')
+		}while(m<=n)
+		var k = prompt('Mời bạn nhập số k...')
+		var s = 0;
+		for (var i = n; i <= m; i++) {
+			if(i%k==0){
+				s = s + i;
+
 			}
-			
 		}
+		document.write('Tổng của các số trong khoảng từ '+ n + ' đến ' + m + ' là: '+s)
 	</script>
 </body>
 </html>
