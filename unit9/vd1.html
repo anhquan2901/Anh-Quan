@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="the_p">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quam consectetur corrupti, dignissimos sequi. Nihil totam alias, ipsa facere quibusdam, modi accusamus quod quae quaerat, sapiente iste nostrum quas maiores.
+	</p>
+	<ul>
+		<li class="mn">Đông Lào</li>
+		<li class="mn">Cần Thơ</li>
+		<li class="mn">Vũng Tàu</li>
+	</ul>
+	<span>Con</span>
+	<span>Chó</span>
+	<span>Tiến</span>
+	<input type="button" value="Lay theo ID" onclick="clickId()">
+	<input type="button" value="Lay theo Class" onclick="clickClass()">
+	<input type="button" value="Lay theo Tags" onclick="clickTags()">
+	<script type="text/javascript">
+		function clickId(){
+			var the_p = document.getElementById('the_p');
+			alert(the_p.innerHTML);
+		}
+		function clickClass(){
+			var class_mn = document.getElementsByClassName('mn');
+			// class_mn[0].style.color = 'pink';
+			class_mn[1].innerHTML = 'DCMTIEN'
+		}
+		function clickTags(){
+			var tags = document.getElementsByTagName('span');
+			tags[1].style.color = 'pink';
+		}
+	</script>
+</body>
+</html>

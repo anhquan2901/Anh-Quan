@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#khung{
+			border: 1px solid black;
+			width:200px;
+			height: auto;
+			
+		}
+		.text{
+			margin-top: 20px;
+			font-size: 100%;
+		}
+	</style>
+	<script type="text/javascript">
+		var increase = 0; 
+
+			function Default() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+					document.getElementsByClassName('text')[i].style.fontSize="100%";
+				}
+			}
+
+			function Big() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase += 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+
+			function Small() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase -= 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+	</script>
+</head>
+<body>
+	<div id="khung">
+		<p>Cỡ chữ</p>
+	
+			<input type="button" value="Default" class="inputt" onclick="DF()"/>
+			<input type="button" value="Big" class="inputt" onclick="Big()"/>
+			<input type="button" value="Small" class="inputt" onclick="Small()"/>
+	</div>
+	<div class="text" >
+		<pre>
+						Tao mặc quần đùi đi vào bar 
+						Không bị đuổi ra 
+						Tao đi chơi gái không cần bao 
+						Đéo bị làm sao 
+
+						Tao xem phim *** không cần sóc 
+						Vãi *** gắt 
+						Chân *** lên cỏ không bị bắt 
+						We say **** 
+
+						Vào trạm xăng tao đốt thuốc không bị bắt 
+						Có nhiều thắng đang muốn bắn ta 
+						Papparapappumpum 
+						Gĩa con vợ mày như giã gạo 
+
+						Caccaracaccumcum 
+						**** con vợ mày tùm lum 
+						Gĩa từ Lotte đến Kangnam 
+						Từ sàn nhà lên lan can 
+
+						Gọi bạn bè qua GangBang 
+						Baby I'm real 
+						Baby I'm real 
+						Nhạc lên là phiêu 
+
+						Baby I'm real 
+						Baby I'm real 
+						Bọn tao thật siêu 
+						Nện không cần yêu 
+
+						Baby I'm real 
+						Baby I'm real 
+						Baby I'm real 
+						Baby I'm real 
+
+						Baby I'm real 
+						Baby I'm real 
+						1+1+=2*2=4+2=6*2=12 
+						Hô Hô 
+
+						Quá nhanh và quá nguy hiểm 
+						Đéo đi thi bọn tao cũng ghi điểm 
+						Ya 
+						Ting ting Facebook 
+
+						Everwing everwing hú 
+						Cảm tử như cầm bon ba càng 
+						Chất tao đang làm bọn mày la làng 
+						*** nghe bọn tao rap giống như đang nhìn thấy 
+
+						Baby I'm real 
+						Baby I'm real 
+						Bọn tao thật siêu 
+						Baby I'm real 
+
+						Baby I'm real 
+						Baby I'm real 
+						Baby I'm real 
+						Baby I'm real 
+						Baby I'm real
+		</pre>
+	</div>
+	</body>
+</html>

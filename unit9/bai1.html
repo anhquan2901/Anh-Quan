@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#khung{
+			background-color: pink;
+			width: 70%;
+			height: auto;
+			padding:20px;
+		}
+		.item{
+			padding-top: 30px;
+		}
+		.text{
+			background-color: blue !important ;
+			display: block !important ;
+			color: pink;
+		}
+		.ct{
+			display: none;
+			padding-left: 20px;
+			padding-bottom: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="khung">
+		<div class="item">
+			<input type="button" value="Tab1" onclick="tab(1)" class="tab " id="tab-1">
+			<input type="button" value="Tab2" onclick="tab(2)" class="tab " id="tab-2">
+			<input type="button" value="Tab3" onclick="tab(3)" class="tab " id="tab-3">
+		</div>
+		<div>
+			<div class="ct text" id="text-1">
+				<h1>ĐỘ TA</h1>
+				<pre> 
+					Phật ở trên kia cao quá
+
+					Mãi mãi không độ tới nàng
+
+					Vạn dặm tương tư vì ai
+
+					Tiếng mõ vang lên phũ phàng
+
+					Chùa này không thấy bóng nàng
+
+					Bồ đề chẳng muốn nở hoa
+
+					Dòng kinh còn lưu vạn chữ
+
+					Bỉ ngạn phủ lên mấy thu
+
+					 
+
+					Hồng trần hôm nay xa quá
+
+					Ái ố không thể giãi bày
+
+					Hỏi người ra đi vì đâu
+
+					Chắc chắn không thể quay đầu
+
+					Mộng này tan theo bóng phật
+
+					Trả lại người áo cà sa
+
+					Vì sao độ ta không độ nàng?
+				</pre>
+		</div>
+		<div class="ct " id="text-2">
+				<h1>KHÔNG</h1>
+				<pre>
+					Vì người hoa rơi hữu ý
+
+					Khiến nước chảy càng vô tình
+
+					Một thưở niên hoa hợp tan
+
+					Tiếng mõ xưa rối loạn
+
+					Bồ đề không nghe tiếng nàng
+
+					Hồng trần đã mấy độ hoa
+
+					Mắt còn vương màu máu
+
+					Hồng nhan chẳng trông thấy đâu?
+
+					 
+
+					Lại một tay ta gõ mõ
+
+					Phá nát cương thường biến họa
+
+					Vài độ xuân thu vừa qua
+
+					Có lẽ không còn thấy nàng
+
+					Hỏi phật trong kiếp này
+
+					Ngày ngày gõ mõ tụng kinh
+
+					Vì sao độ ta không độ nàng?
+				</pre>
+		</div>
+		<div class="ct " id="text-3">
+				<h1>ĐỘ NÀNG</h1>
+				<pre>
+					Vì người hoa rơi hữu ý
+
+					Khiến nước chảy càng vô tình
+
+					Một thưở niên hoa hợp tan
+
+					Tiếng mõ xưa rối loạn
+
+					Bồ đề không nghe tiếng nàng
+
+					Hồng trần đã mấy độ hoa
+
+					Mắt còn vương màu máu
+
+					Hồng nhan chẳng trông thấy đâu?
+
+					 
+
+					Lại một tay ta gõ mõ
+
+					Phá nát cương thường biến họa
+
+					Vài độ xuân thu vừa qua
+
+					Có lẽ không còn thấy nàng
+
+					Hỏi phật trong kiếp này
+
+					Ngày ngày gõ mõ tụng kinh
+
+					Vì sao độ ta không độ nàng?
+				</pre>
+		</div>
+		</div>
+	</div>
+	<script>
+	function tab(number){
+		var tab = document.getElementsByClassName('tab')[0];
+		tab.classList.remove('tab');
+		document.getElementById('tab-'+number).classList.add('tab') 
+		text = document.getElementsByClassName('text')[0];
+		text.classList.remove('text');
+		document.getElementById('text-'+number).classList.add('text') 
+
+	}
+</script>
+</body>
+</html>
